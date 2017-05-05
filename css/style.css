@@ -1,0 +1,17 @@
+.titleContainer {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+.animateFall {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, -10);
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.titleContainer.animate .animateFall {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
